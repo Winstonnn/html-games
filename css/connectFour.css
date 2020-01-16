@@ -1,0 +1,55 @@
+h1 {
+  font-size: 60px;
+  text-align: center;
+  font-family: 'IM Fell Great Primer SC', serif;
+}
+
+#game-hint {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'IM Fell Great Primer SC', serif;
+}
+
+#counter {
+  /* color: white; */
+  visibility: hidden;
+}
+
+.game-table {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+td {
+  /* border: 2px solid black;
+  border-radius: 20px; */
+  width: 90px;
+  height: 90px;
+}
+
+.game-btn {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: #B2B2B2;
+}
+
+.game-btn-top {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: #B2B2B2;
+}
+
+#reset-btn {
+  margin: 0 auto;
+  visibility: hidden;
+}
+
+.a {
+  display: flex;
+  flex-direction: column;
+
+}
