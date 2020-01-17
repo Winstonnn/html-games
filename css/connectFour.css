@@ -46,6 +46,9 @@ td {
 #reset-btn {
   margin: 0 auto;
   visibility: hidden;
+  font-family: 'IM Fell Great Primer SC', serif;
+  height: 50px;
+  width: 120px;
 }
 
 .a {

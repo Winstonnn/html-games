@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+  <h1>HHHH</h1>
+  <div id="other">Trigger the handler</div>
+  </body>
+
+  <script type="text/javascript">
+    $('body').keypress(function() {
+      console.log("key is pressed!");
+      console.log(event.key);
+    })
+  </script>
+</html>

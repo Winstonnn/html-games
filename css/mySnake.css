@@ -1,0 +1,24 @@
+#pannel {
+  margin-bottom: 10px;
+}
+
+.game-table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+.game-cell {
+  border: 1px solid #808080;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+/* #pannel table .snake {
+  background-color: green;
+}
+#pannel table .food {
+  background-color: blue;
+} */
