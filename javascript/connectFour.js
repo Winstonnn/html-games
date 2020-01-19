@@ -58,14 +58,14 @@ function dropCoin() {
         /* Drop animation */
       }
 
-      currCount = Number($('#counter').text());
-      if (currCount % 2 == 0) {
+      currCount = sessionStorage.getItem('count');
+      if (currCount++ % 2 == 0) {
         newColor = '#FF0000';
       }
       else {
         newColor = '#0000FF';
       }
-      $('#counter').text(String(currCount + 1));
+      sessionStorage.setItem('count', currCount);
       $('#' + String(i) + '-' + y).css('background-color', newColor);
       var hasWon = isWinning(newColor, String(i), y);
       // console.log('result is:' + hasWon);
@@ -92,12 +92,13 @@ function clearCoins() {
   $('.game-btn-top').prop('disabled', false);
   $('#reset-btn').css('visibility', 'hidden');
   $('#game-hint').text('Please enter the name of the players and get started!');
+  sessionStorage.setItem('count', 0);
 }
 
 function isWinning(currColor, x, y) {
   // horizontal
   var count = 0;
-  console.log(currColor.colorRgb());
+  //console.log(currColor.colorRgb());
   for (var i=1; i<=7; i++) {
     // console.log($('#' + x + '-' + String(i)).css('background-color'));
     if ($('#' + x + '-' + String(i)).css('background-color') == currColor.colorRgb()) {
@@ -174,6 +175,6 @@ function getCoordinate(elemId) {
   return elemId.split('-');
 }
 
-
+sessionStorage.setItem('count', 0);
 $(".game-btn-top").click(dropCoin);
 $("#reset-btn").click(clearCoins);
