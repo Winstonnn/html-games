@@ -5,12 +5,27 @@
     <title></title>
 
     <link rel="stylesheet" href="../css/mySnake.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js">
     </script>
   </head>
   <body>
-    <input type="button" id="reset" value="">RESET</input>
+    <button id="start" type="button" class="btn btn-outline-primary">START</button>
+  <button id="reset" type="button" class="btn btn-outline-primary">RESET</button>
     <div id="pannel"></div>
+    <h2>Please select the size of the panel:</h2>
+    <select id='panel-size'>
+      <option id="s">20*20</option>
+      <option id="m">30*30</option>
+      <option id="lg">50*50</option>
+    </select>
+    <h2>Please select initial speed:</h2>
+    <select id='speed'>
+      <option id="slow">slow</option>
+      <option id="normal">normal</option>
+      <option id="fast">fast</option>
+      <option id="superFast">super fast</option>
+    </select>
   </body>
   <script src="../javascript/mySnake.js">
   </script>

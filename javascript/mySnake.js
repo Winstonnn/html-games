@@ -162,14 +162,17 @@ function Controller(panelWidth, panelHeight) {
   }
 
   this.isDead = function() {
-    this.snake.head
-    // if this
     var head = this.snake.body[this.snake.body.length - 1];
+    // console.log('the head is: ' + head.x + ' ' + head.y);
+    // console.log('the food is:' + this.food.position.x + ' ' + this.food.position.y);
     if (head.x > this.panelHeight - 1 || head.x < 0 || head.y > this.panelWidth - 1 || head.y < 0)
       return 1;
-    for(var i=2; i < this.snake.body.length - 1; i++) {
-      if (this.snake.body[i].x == head.x && this.snake.body[i].y == head.y)
+    for(var i=this.snake.body.length - 3; i > 0; i--) {
+      if (this.snake.body[i].x == head.x && this.snake.body[i].y == head.y) {
+        for (var index=0; index < this.snake.body.length; index++)
+          // console.log(this.snake.body[index].x + ' ' + this.snake.body[index].y);
         return 1;
+      }
     }
     return 0;
   }
