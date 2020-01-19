@@ -1,17 +1,38 @@
+.game-control {
+  margin: 0 auto;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.score-board {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.records {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+#loacal-record-table {
+  font-size: 20px;
+}
+
 #start {
   font-size: 20px;
-  /* padding: 10px; */
   margin: 10px;
 }
 
 #reset {
   font-size: 20px;
-  /* padding: 10px; */
   margin: 10px;
 }
 
 #pannel {
+  margin-left: 10px;
   margin-bottom: 10px;
+}
+
+.game-setting {
+  margin-left: 10px;
+  font-family: 'Luckiest Guy', cursive;
 }
 
 .game-table {
